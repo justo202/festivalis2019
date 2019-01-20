@@ -1,0 +1,23 @@
+
+<nav class="site-navigation flex flex-column justify-content-between">
+    <div class="site-branding d-none d-lg-block ">
+        <h1 class="site-title"><a href="index.html" rel="home"><img src="images/logo2.png" alt="Logo"></a></h1>
+    </div><!-- .site-branding -->
+
+    <ul class="main-menu flex flex-column justify-content-center">
+      {% assign sorted_pages = site.pages | sort:"order" %}
+      {% for node in sorted_pages %}
+      {% if node.order != nil %}
+      <li {%if node.title == page.title %} class = "current-menu-item" {%endif%}> <a href="{{node.path}}">{{node.title}}</a></li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+
+    <div class="social-profiles">
+        <ul class="flex justify-content-start justify-content-lg-center align-items-center mb-5">
+            <li><a href="https://www.facebook.com/Druskomanija/"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/druskomanija/"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+        
+    </div><!-- .social-profiles -->
+</nav><!-- .site-navigation -->
