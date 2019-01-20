@@ -247,7 +247,7 @@ a:hover, a:active {
     .site-header,
     .site-navigation {
         position: fixed;
-        top: 0;
+      /*  top: 0;*/
         left: 0;
         z-index: 999;
         width: 80px;
@@ -1086,4 +1086,62 @@ a:hover, a:active {
 
 .single-page .entry-header .byline .date-format a {
     color: #bfbfbf;
+}
+/*-----------------------------------------
+# Main header css
+-------------------------------------------*/
+
+
+.mainHeader
+{
+padding: 10px;
+width: 100%;
+border-bottom: 0px solid black;
+background: #fff;
+box-shadow: 0 12px 24px rgba(0,0,0,.09);
+
+}
+.mainHeader h5
+{
+
+  margin-bottom: 0px;
+}
+.mobileHeader
+{
+  margin-left: 10px;
+  opacity: 0;
+  font-size: 0px;
+}
+@media screen and (max-width: 992px) {
+  .mainHeader
+  {
+    border: none;
+    background: transparent;
+    box-shadow: none;
+  }
+  .mainHeader h5
+  {
+    opacity: 0;
+  }
+  .mobileHeader
+  {
+    opacity: 1;
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 678px) {
+
+
+  .mobileHeader
+  {
+
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 491px) {
+
+#muzikosfestivalis
+{
+  display: none;
+}
 }
