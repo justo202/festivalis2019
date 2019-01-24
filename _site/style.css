@@ -219,7 +219,10 @@ a:hover, a:active {
     }
 
     .site-navigation {
-        position: absolute;
+      /*
+      changed from absolute to fixed
+      */
+        position: fixed;
         top: 78px;
         left: 0;
         z-index: 99;
@@ -247,7 +250,7 @@ a:hover, a:active {
     .site-header,
     .site-navigation {
         position: fixed;
-      /*  top: 0;*/
+      /*  top: 0px; */
         left: 0;
         z-index: 999;
         width: 80px;
@@ -1113,6 +1116,7 @@ box-shadow: 0 12px 24px rgba(0,0,0,.09);
   margin-left: 10px;
   opacity: 0;
   font-size: 0px;
+
 }
 @media screen and (max-width: 992px) {
   .mainHeader
