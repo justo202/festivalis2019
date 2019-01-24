@@ -257,7 +257,7 @@ a:hover, a:active {
     }
 
     .site-navigation {
-        background: #f7f7f7;
+        background: #ffffff;
     }
 
     .site-navigation.show {
@@ -352,6 +352,7 @@ a:hover, a:active {
 .portfolio-content {
     position: relative;
     margin-bottom: 30px;
+    height: 100%;
 }
 
 .home-page {
@@ -364,6 +365,7 @@ a:hover, a:active {
 
 .portfolio-content figure {
     margin: 0;
+    height: 100%;
 }
 
 .portfolio-content figure img {
@@ -1144,4 +1146,30 @@ box-shadow: 0 12px 24px rgba(0,0,0,.09);
 {
   display: none;
 }
+}
+/*
+/////////////////////////////////////
+#Logo resizing changes
+///////////////////////////
+*/
+#big_logo
+{
+  max-width: 250px;
+  max-height: 150px;
+
+}
+/*
+//////////////////////
+#Teikti_kurinius images
+//////////////
+*/
+.teikti_kurinius_img
+{
+  border:none;
+   background:none;
+   cursor:pointer;
+   height:100%;
+   width:100%;
+
+
 }
