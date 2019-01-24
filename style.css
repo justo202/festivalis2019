@@ -1158,6 +1158,12 @@ box-shadow: 0 12px 24px rgba(0,0,0,.09);
   max-height: 150px;
 
 }
+#small_logo
+{
+  max-width: 60px;
+  max-height: 50px; 
+
+}
 /*
 //////////////////////
 #Teikti_kurinius images
