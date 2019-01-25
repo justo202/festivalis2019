@@ -249,8 +249,11 @@ a:hover, a:active {
 @media screen and (min-width: 992px) {
     .site-header,
     .site-navigation {
-        position: fixed;
-      /*  top: 0px; */
+      /*
+      changed from fixed to absolute.
+      */
+        position: absolute;
+      /*  top: 44px;*/
         left: 0;
         z-index: 999;
         width: 80px;
