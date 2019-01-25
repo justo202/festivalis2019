@@ -249,15 +249,13 @@ a:hover, a:active {
 @media screen and (min-width: 992px) {
     .site-header,
     .site-navigation {
-      /*
-      changed from fixed to absolute.
-      */
-        position: absolute;
-      /*  top: 44px;*/
+
+        position: fixed;
+        top: 42.5px;
         left: 0;
         z-index: 999;
         width: 80px;
-        height: 100vh;
+        height: 95vh;
         padding: 0 15px;
         box-shadow: 6px 0 12px rgba(0,0,0,.05);
     }
@@ -1102,11 +1100,15 @@ a:hover, a:active {
 
 .mainHeader
 {
+position: fixed;
+
+z-index: 9999;
 padding: 10px;
 width: 100%;
 border-bottom: 0px solid black;
 background: #fff;
 box-shadow: 0 12px 24px rgba(0,0,0,.09);
+height: 5vh;
 
 }
 .mainHeader h5
@@ -1127,6 +1129,8 @@ box-shadow: 0 12px 24px rgba(0,0,0,.09);
     border: none;
     background: transparent;
     box-shadow: none;
+    position: static;
+    z-index: auto;
   }
   .mainHeader h5
   {
@@ -1186,4 +1190,10 @@ box-shadow: 0 12px 24px rgba(0,0,0,.09);
    padding: 0px;
    outline: none;
    border: 0;
+}
+
+
+#breadcrumbs
+{
+  margin-top:42.5px;
 }
