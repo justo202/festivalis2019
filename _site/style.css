@@ -255,7 +255,7 @@ a:hover, a:active {
         left: 0;
         z-index: 999;
         width: 80px;
-        height: 95vh;
+        height: 100vh;
         padding: 0 15px;
         box-shadow: 6px 0 12px rgba(0,0,0,.05);
     }
@@ -297,7 +297,7 @@ a:hover, a:active {
     .site-navigation {
         left: -250px;
         z-index: 99;
-        width: 250px;
+        width: 300px;
         padding: 0;
         box-shadow: 16px 0 42px rgba(0,0,0,.09);
     }
