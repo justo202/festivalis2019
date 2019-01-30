@@ -1197,3 +1197,34 @@ height: 5vh;
 {
   margin-top:42.5px;
 }
+
+/*
+/////////////////////////////////////////
+#Modal text things
+////////////////////////////////////////////
+
+*/
+.modal-text-header p
+{
+ margin-bottom: 0px;
+ font-weight: bold;
+}
+.modal-text-header, .modal-text-block
+{
+  margin-bottom: 16px;
+}
+.modal-text-block p, ul, h4
+{
+  margin-bottom: 0px;
+
+}
+#not-bold
+{
+  font-weight: normal;
+}
+/*date font for JAUNIEJI KUREJAI MODAL */
+#date
+{
+font-size: 19px;
+
+}
