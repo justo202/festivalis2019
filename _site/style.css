@@ -45,7 +45,7 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 @media screen and (min-width: 992px) {
     .outer-container {
-        padding-left: 80px;
+        padding-left: 60px;
     }
 }
 
@@ -254,10 +254,10 @@ a:hover, a:active {
     .site-navigation {
 
         position: fixed;
-        top: 42.5px;
+        top: 0;
         left: 0;
         z-index: 999;
-        width: 80px;
+        width: 60px;
         height: 100vh;
         padding: 0 15px;
         box-shadow: 6px 0 12px rgba(0,0,0,.05);
@@ -268,7 +268,7 @@ a:hover, a:active {
     }
 
     .site-navigation.show {
-        left: 80px;
+        left: 60px;
     }
 
     .site-header {
@@ -1103,15 +1103,13 @@ a:hover, a:active {
 
 .mainHeader
 {
-position: fixed;
+  margin-left: 60px;
 
-z-index: 9999;
 padding: 10px;
-width: 100%;
+width: auto;
 border-bottom: 0px solid black;
 background: #fff;
 box-shadow: 0 12px 24px rgba(0,0,0,.09);
-height: 5vh;
 
 }
 .mainHeader h5
