@@ -1,8 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Work+Sans:300,400,500,600,700');
+@font-face {
 
+font-family: 'DrukWideBold';
+src: url(fonts/DrukWideBold.otf);
+}
+@font-face {
+
+font-family: 'GlenJan-AsketNarrow-Light';
+src: url(fonts/GlenJan-AsketNarrow-Light.otf);
+}
+@font-face {
+
+font-family: 'SharpGroteskMedium05';
+src: url(fonts/SharpGroteskMedium05.otf);
+}
 body {
-    color: #191919;
-    font-family: 'Work Sans', sans-serif;
+    color: #FFFFFF;
+    font-family: 'GlenJan-AsketNarrow-Light', 'Work Sans', sans-serif;
+    background-color: #444444;
 }
 
 img {
@@ -104,6 +119,7 @@ a:hover, a:active {
 .hamburger-menu img {
     display: block;
     margin: 0 auto;
+    color: #08F4D2;
 }
 
 /*
@@ -182,8 +198,8 @@ a:hover, a:active {
         left: 0;
         z-index: 999;
         width: 100%;
-        padding: 15px 30px;
-        background: #fff;
+        padding: 10px 30px;
+        background: #444444;
         box-shadow: 0 12px 24px rgba(0,0,0,.09);
     }
 
@@ -259,8 +275,8 @@ a:hover, a:active {
         z-index: 999;
         width: 60px;
         height: 100vh;
-        padding: 0 15px;
-        box-shadow: 6px 0 12px rgba(0,0,0,.05);
+        padding: 0 10px;
+
     }
 
     .site-navigation {
@@ -272,7 +288,9 @@ a:hover, a:active {
     }
 
     .site-header {
-        background: #fff;
+        background: #444444;
+        border: 1px solid #343333;
+
     }
 
     .site-header.no-shadow {
@@ -285,7 +303,7 @@ a:hover, a:active {
     }
 
     .site-title {
-        padding: 28px 0 10px 0;
+        padding: 20px 0 10px 0;
     }
 
     .hamburger-menu .menu-icon,
@@ -1103,18 +1121,19 @@ a:hover, a:active {
 
 .mainHeader
 {
-  margin-left: 60px;
+  font-size: 16px;
+  font-weight: 300;
+  margin-left: 84px;
+  margin-top: 31px;
+  width: auto;
 
-padding: 10px;
-width: auto;
-border-bottom: 0px solid black;
-background: #fff;
-box-shadow: 0 12px 24px rgba(0,0,0,.09);
+  background: transparent;
+
 
 }
 .mainHeader h5
 {
-
+  font-family: 'DrukWideBold';
   margin-bottom: 0px;
 }
 .mobileHeader
@@ -1172,8 +1191,9 @@ box-shadow: 0 12px 24px rgba(0,0,0,.09);
 }
 #small_logo
 {
-  max-width: 60px;
-  max-height: 50px;
+  width: 40px;
+  height: 60px;
+
 
 }
 /*
