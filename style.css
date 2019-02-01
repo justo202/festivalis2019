@@ -1127,7 +1127,7 @@ a:hover, a:active {
   width: auto;
 
   background: transparent;
-
+  position: absolute;
 
 
 
@@ -1262,7 +1262,61 @@ font-size: 19px;
 .main-picture-space
 {
   width: auto;
-  min-height: 95vh;
+  min-height: 100vh;
+  padding-left: 60px;
+  width: 100%;
+   display: flex;
+   justify-content: center;
+}
+
+.text-area
+{
+  display: inline-block;
+}
+.arrow-down-scroll
+{
+  display: block;
+  align-self: flex-end;
+
+
+}
+#mainImage
+{
+  position: absolute;
+  display: inline-block;
+  height: 110vh;
+  width: 100%;
+  align-self: center;
+  top: -100px;
+  left:0;
+}
+.text-on-picture
+{
+  position: absolute;
+  display: inline-block;
+  align-self: center;
+  padding-right: 170px;
+  padding-top: 100px;
+}
+#druskomanija
+{
+
+  color: #000000;
+font-family: 'SharpGroteskMedium05', 'Work Sans', sans-serif;
+font-size: 210.19px;
+font-weight: 500;
+padding: 0px;
+margin: 0px;
+}
+#muzikosfestivalis
+{
+  color: #000000;
+ font-family: 'GlenJan-AsketNarrow-Light', 'Work Sans', sans-serif;;
+ font-size: 17px;
+ font-weight: 300;
+ letter-spacing: 0.94px;
+ padding-bottom: 200px;
+
 
 
 }
