@@ -144,7 +144,7 @@ a:hover, a:active {
 .main-menu li {
     display: block;
     padding: 12px 0;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 500;
     border-bottom: 1px solid #ebebeb;
 }
@@ -238,7 +238,7 @@ a:hover, a:active {
 
     .main-menu li:hover::after,
     .main-menu li.current-menu-item::after {
-        color: #f0437e;
+        color: #08F4D2;
     }
 
     .site-navigation {
@@ -411,7 +411,7 @@ a:hover, a:active {
     width: 100%;
     height: 100%;
     background: rgba(255,255,255,.9);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'GlenJan-AsketNarrow-Light', 'Poppins', sans-serif;
     text-align: center;
     visibility: hidden;
     opacity: 0;
@@ -425,11 +425,18 @@ a:hover, a:active {
 
 .portfolio-content h3 {
     margin-bottom: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'GlenJan-AsketNarrow-Light', 'Poppins', sans-serif;
     font-size: 1.5rem;
     font-weight: 500;
-}
 
+}
+.entry-content h3 {
+
+  padding-top: 20px;
+  border-bottom: 1px solid #08F4D2;
+
+
+}
 .home-page .portfolio-content h3 {
     font-size: 2.25rem;
 }
@@ -1225,8 +1232,17 @@ a:hover, a:active {
    outline: none;
 
 }
-
-
+.vardai h5
+{
+  margin-bottom: 0;
+  opacity: 0.8;
+}
+#terminas
+{
+  opacity: 0.6;
+ font-size: 15px;
+  margin-bottom: 20px
+}
 /*
 /////////////////////////////////////////
 #Modal text things
@@ -1259,8 +1275,21 @@ font-size: 19px;
 }
 .modal-content
 {
+  border: 3px solid #08F4D2;
   background-color: #444444;
 }
+.modal-header
+{
+  border-bottom: 1px solid #08F4D2;
+}
+.close
+{
+  color: #08F4D2 !important;
+  opacity: 1;
+  text-shadow: none;
+
+}
+
 /*
 //////////////////////////////////////////////////
 #CSS FOR THE MAIN PAGE IMAGE
