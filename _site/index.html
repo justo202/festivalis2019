@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="style.css">
 <!-- Module Animations -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 </head>
 <body>
   <div class="mainHeader">
@@ -87,31 +87,35 @@
 
   <section class ="main-picture-space">
 
+<div class="container-fluid">
+  <div class="row">
 
-<svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="-40 150 1200 900" width = "100%" height = "100vh" style = "display:block; margin:auto" preserveAspectRatio="xMidYMid slice">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-name="Layer 1" viewBox="-40 150 1200 900" width = "100%" height = "90vh" style = "display:block; margin:auto" preserveAspectRatio="xMidYMid slice">
 
-<image href="images/Hero-bendras.svg" width = "1500" height = "1000">
+    <image xlink:href="images/Hero-bendras.svg" width = "1500" height = "1000">
 
 
-</svg>
-  </section>
-  <div class="container" style = "padding-left:60px; margin-bottom:80px">
-    <div class="row justify-content-md-center">
-      <div class="col-md-auto down-scroll">
-        <a href="#kuriniai">
-          <h1 class = "m-0">Teikti kūrinius</h1>
-          <img style = "display:block;" src="images/Arrow-down.svg" alt="" class="mx-auto">
-        </a>
-
-      </div>
-
-    </div>
+    </svg>
   </div>
 
+  <div class="row justify-content-md-center">
+    <div class="col-md-auto down-scroll">
+      <a href="#kuriniai">
+        <h1 class = "m-0">Teikti kūrinius</h1>
+        <img style = "display:block;" src="images/Arrow-down.svg" alt="" class="mx-auto">
+      </a>
+
+    </div>
+
+  </div>
+</div>
+  </section>
 
 
-  <div class="outer-container">
-    <div class="container portfolio-page">
+
+
+  <div class="outer-container" id = "kuriniai">
+    <div class="container portfolio-page" style = "margin-bottom: 80px;margin-top:150px">
       <div class="row"">
       <div class=" col" id="breadcrumbs">
   <ul class="breadcrumbs flex align-items-center">
@@ -121,7 +125,7 @@
 </div><!-- .row -->
 
 
-      <div class="row" id = "kuriniai">
+      <div class="row">
 
         <!--1st picture -->
         <div class="col-12 col-md-6 col-lg-4" style="padding-bottom: 30px">
@@ -132,14 +136,24 @@
                 <img src="images/piano.jpg" alt="laisvoji muzika paveiksliukas">
               </figure>
 
-              <div class="entry-content flex flex-column align-items-center justify-content-end">
-                <div class="flex flex-column align-items-center justify-content-start mb-2">
-                  <h5>Liudas Mockūnas, Arnas Mikalkėnas, Anne-Liis Poll</h5>
-                </div>
-                <h5>Terminas: balandžio 26 d.</h5>
-              </div>
-              <div class="entry-content flex flex-column align-items-center justify-content-start">
-                <h3>LAISVOJI MUZIKA</h3>
+
+              <div class="entry-content flex flex-column align-items-center justify-content-center">
+
+
+                  <h3>LAISVOJI MUZIKA</h3>
+
+                  <div class="mb-auto mt-auto vardai">
+
+                    <h5>Liudas Mockūnas <h5>
+                      <h5>Arnas Mikalkėnas</h5>
+                      <h5>Anne-Liis Poll</h5>
+                  </div>
+
+
+                    <h5 class = "font-italic" id = "terminas">Terminas: balandžio 26 d.</h5>
+
+
+
               </div>
 
             </div><!-- .portfolio-content -->
@@ -155,15 +169,25 @@
                 <img src="images/fleita.jpg" alt="fleita paveiksliukas">
               </figure>
 
-              <div class="entry-content flex flex-column align-items-center justify-content-end">
-                <div class="flex flex-column align-items-center justify-content-start mb-2">
-                  <h4>Ewa Liebchen (PL)</h4>
-                </div>
-                <h5>Terminas: balandžio 1 d.</h5>
+              <div class="entry-content flex flex-column align-items-center justify-content-center">
+
+
+                  <h3>FLEITA</h3>
+
+                  <div class="mb-auto mt-auto vardai">
+
+
+                      <h5>Ewa Liebchen (PL)</h5>
+
+                  </div>
+
+
+                    <h5 class = "font-italic" id = "terminas">Terminas: balandžio 1 d.</h5>
+
+
+
               </div>
-              <div class="entry-content flex flex-column align-items-center justify-content-start">
-                <h3>FLEITA</h3>
-              </div>
+
 
             </div><!-- .portfolio-content -->
 
@@ -178,14 +202,23 @@
                 <img src="images/tyli-muzika.jpg" alt="tyli muzika paveiksliukas">
               </figure>
 
-              <div class="entry-content flex flex-column align-items-center justify-content-end">
-                <div class="flex flex-column align-items-center justify-content-start mb-2">
-                  <h4>Twenty Fingers Duo</h4>
-                </div>
-                <h5>Terminas: balandžio 1 d.</h5>
-              </div>
-              <div class="entry-content flex flex-column align-items-center justify-content-start">
-                <h3>TYLI MUZIKA</h3>
+              <div class="entry-content flex flex-column align-items-center justify-content-center">
+
+
+                  <h3>TYLI MUZIKA</h3>
+
+                  <div class="mb-auto mt-auto vardai">
+
+
+                      <h5>Twenty Fingers Duo</h5>
+
+                  </div>
+
+
+                    <h5 class = "font-italic" id = "terminas">Terminas: balandžio 1 d.</h5>
+
+
+
               </div>
 
             </div><!-- .portfolio-content -->
@@ -197,20 +230,31 @@
         <div class="col-12 col-md-6 col-lg-4" style="padding-bottom: 30px">
           <button type="button" data-toggle="modal" data-target="#piano" class="teikti_kurinius_img"">
 
-                                    <div class=" portfolio-content mb-0">
+                <div class=" portfolio-content mb-0">
             <figure>
               <img src="images/piano.jpg" alt="Re-imagining paveiksliukas">
             </figure>
 
-            <div class="entry-content flex flex-column align-items-center justify-content-end">
-              <div class="flex flex-column align-items-center justify-content-start">
-                <h4>Marta Finkelštein</h4>
-              </div>
-              <h5>Terminas: balandžio 5 d.</h5>
+
+            <div class="entry-content flex flex-column align-items-center justify-content-center">
+
+
+                <h3>PIANO RE-IMAGINED</h3>
+
+                <div class="mb-auto mt-auto vardai">
+
+
+                    <h5>Marta Finkelštein</h5>
+
+                </div>
+
+
+                  <h5 class = "font-italic" id = "terminas">Terminas: balandžio 5 d.</h5>
+
+
+
             </div>
-            <div class="entry-content flex flex-column align-items-center justify-content-start">
-              <h3>PIANO RE-IMAGINED</h3>
-            </div>
+
 
         </div><!-- .portfolio-content -->
 
@@ -225,15 +269,27 @@
               <img src="images/vizuali-muzika.jpg" alt="Vizuali muzika paveiksliukas">
             </figure>
 
-            <div class="entry-content flex flex-column align-items-center justify-content-end">
-              <div class="flex flex-column align-items-center justify-content-start mb-2">
-                <h5>ContemporACCO</h5>
-              </div>
-              <h5>Terminas: balandžio 19 d.</h5>
+
+
+            <div class="entry-content flex flex-column align-items-center justify-content-center">
+
+
+                <h3>VIZUALI MUZIKA</h3>
+
+                <div class="mb-auto mt-auto vardai">
+
+
+                    <h5>ContemporACCO</h5>
+
+                </div>
+
+
+                  <h5 class = "font-italic" id = "terminas">Terminas: balandžio 19 d.</h5>
+
+
+
             </div>
-            <div class="entry-content flex flex-column align-items-center justify-content-start">
-              <h3>VIZUALI MUZIKA</h3>
-            </div>
+
 
           </div><!-- .portfolio-content -->
 
@@ -248,15 +304,26 @@
               <img src="images/bigbendas.jpg" alt="Bignebdas paveiksliukas">
             </figure>
 
-            <div class="entry-content flex flex-column align-items-center justify-content-end">
-              <div class="flex flex-column align-items-center justify-content-start">
-                <h4>LMTA BIG BENDAS</h4>
-              </div>
-              <h5>Terminas pasiūlymams: balandžio 24 d.</h5>
-            </div>
-            <div class="entry-content flex flex-column align-items-center justify-content-start">
-              <h3>BIG BENDAS</h3>
-            </div>
+
+                        <div class="entry-content flex flex-column align-items-center justify-content-center">
+
+
+                            <h3>BIG BENDAS</h3>
+
+                            <div class="mb-auto mt-auto vardai">
+
+
+                                <h5>LMTA BIG BENDAS</h5>
+
+                            </div>
+
+
+                              <h5 class = "font-italic" id = "terminas">Terminas: balandžio 24 d.</h5>
+
+
+
+                        </div>
+
 
           </div><!-- .portfolio-content -->
 
@@ -270,15 +337,23 @@
             <figure>
               <img src="images/kamerine-muzika.jpg" alt="kamerine muzika paveiksliukas">
             </figure>
+            <div class="entry-content flex flex-column align-items-center justify-content-center">
 
-            <div class="entry-content flex flex-column align-items-center justify-content-end">
-              <div class="flex flex-column align-items-center justify-content-start mb-2">
-                <h4>NB8 ART</h4>
-              </div>
-              <h5>Terminas: balandžio 26 d.</h5>
-            </div>
-            <div class="entry-content flex flex-column align-items-center justify-content-start">
-              <h3>KAMERINĖ MUZIKA</h3>
+
+                <h3>KAMERINĖ MUZIKA</h3>
+
+                <div class="mb-auto mt-auto vardai">
+
+
+                    <h5>NB8 ART</h5>
+
+                </div>
+
+
+                  <h5 class = "font-italic" id = "terminas">Terminas: balandžio 26 d.</h5>
+
+
+
             </div>
 
           </div><!-- .portfolio-content -->
@@ -293,16 +368,25 @@
             <figure>
               <img src="images/muzikologai.jpg" alt="Muzika sokiui paveiksliukas">
             </figure>
+            <div class="entry-content flex flex-column align-items-center justify-content-center">
 
-            <div class="entry-content flex flex-column align-items-center justify-content-end">
-              <div class="flex flex-column align-items-center justify-content-start mb-2">
-                <h4>MUZIKOLOGAMS</h4>
-              </div>
-              <h5>Terminas: balandžio 15 d.</h5>
+
+                <h3>MUZIKOLOGAMS</h3>
+
+                <div class="mb-auto mt-auto vardai">
+
+
+                    <h5>KONFERENCIJA</h5>
+
+                </div>
+
+
+                  <h5 class = "font-italic" id = "terminas">Terminas: balandžio 15 d.</h5>
+
+
+
             </div>
-            <div class="entry-content flex flex-column align-items-center justify-content-start">
-              <h3>KONFERENCIJA</h3>
-            </div>
+
 
           </div><!-- .portfolio-content -->
 
@@ -317,15 +401,25 @@
               <img src="images/jaunieji-kurejai.jpg" alt="Muzika sokiui paveiksliukas">
             </figure>
 
-            <div class="entry-content flex flex-column align-items-center justify-content-end">
-              <div class="flex flex-column align-items-center justify-content-start mb-2">
-                <h4>Šiuolaikinės muzikos ansamblis Syneasthesis</h4>
-              </div>
-              <h5>Terminas: vasario 18 d.</h5>
+            <div class="entry-content flex flex-column align-items-center justify-content-center">
+
+
+                <h3>JAUNIEJI KŪRĖJAI</h3>
+
+                <div class="mb-auto mt-auto vardai">
+
+
+                    <h5>Šiuolaikinės muzikos ansamblis Syneasthesis</h5>
+
+                </div>
+
+
+                  <h5 class = "font-italic" id = "terminas">Terminas: vasario 18 d.</h5>
+
+
+
             </div>
-            <div class="entry-content flex flex-column align-items-center justify-content-start">
-              <h3>JAUNIEJI KŪRĖJAI</h3>
-            </div>
+
 
           </div><!-- .portfolio-content -->
 
