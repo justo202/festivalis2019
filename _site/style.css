@@ -14,6 +14,9 @@ src: url(fonts/GlenJan-AsketNarrow-Light.otf);
 font-family: 'SharpGroteskMedium05';
 src: url(fonts/SharpGroteskMedium05.otf);
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
     color: #FFFFFF;
     font-family: 'GlenJan-AsketNarrow-Light', 'Work Sans', sans-serif;
