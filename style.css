@@ -1,8 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Work+Sans:300,400,500,600,700');
+@font-face {
 
+font-family: 'DrukWideBold';
+src: url(fonts/DrukWideBold.otf);
+}
+@font-face {
+
+font-family: 'GlenJan-AsketNarrow-Light';
+src: url(fonts/GlenJan-AsketNarrow-Light.otf);
+}
+@font-face {
+
+font-family: 'SharpGroteskMedium05';
+src: url(fonts/SharpGroteskMedium05.otf);
+}
+html {
+  scroll-behavior: smooth;
+}
 body {
-    color: #191919;
-    font-family: 'Work Sans', sans-serif;
+    color: #FFFFFF;
+    font-family: 'GlenJan-AsketNarrow-Light', 'Work Sans', sans-serif;
+    background-color: #444444;
+
 }
 
 img {
@@ -45,7 +64,7 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 @media screen and (min-width: 992px) {
     .outer-container {
-        padding-left: 80px;
+        padding-left: 60px;
     }
 }
 
@@ -104,6 +123,7 @@ a:hover, a:active {
 .hamburger-menu img {
     display: block;
     margin: 0 auto;
+    color: #08F4D2;
 }
 
 /*
@@ -135,14 +155,14 @@ a:hover, a:active {
 
 .main-menu li a {
     display: block;
-    color: #a6a6a6;
+    color: #FFFFFF;
     text-decoration: none;
     transition: all 0.35s;
 }
 
 .main-menu li a:hover,
 .main-menu li.current-menu-item a {
-    color: #f0437e;
+    color: #08F4D2;
 }
 
 /*
@@ -163,12 +183,12 @@ a:hover, a:active {
 }
 
 .social-profiles ul li a {
-    color: #191919;
+    color: #FFFFFF;
     transition: all 0.35s;
 }
 
 .social-profiles ul li a:hover {
-    color: #f0437e;
+    color: #08F4D2;
 }
 
 .nav-bar-sep {
@@ -182,8 +202,8 @@ a:hover, a:active {
         left: 0;
         z-index: 999;
         width: 100%;
-        padding: 15px 30px;
-        background: #fff;
+        padding: 10px 30px;
+        background: #444444;
         box-shadow: 0 12px 24px rgba(0,0,0,.09);
     }
 
@@ -231,7 +251,7 @@ a:hover, a:active {
         z-index: 99;
         width: 100%;
         height: 500px;
-        background: #fff;
+        background: #444444;
         box-shadow: 0 12px 24px rgba(0,0,0,.09);
         visibility: hidden;
         opacity: 0;
@@ -254,25 +274,27 @@ a:hover, a:active {
     .site-navigation {
 
         position: fixed;
-        top: 42.5px;
+        top: 0;
         left: 0;
         z-index: 999;
-        width: 80px;
+        width: 60px;
         height: 100vh;
-        padding: 0 15px;
-        box-shadow: 6px 0 12px rgba(0,0,0,.05);
+        padding: 0 10px;
+
     }
 
     .site-navigation {
-        background: #fff;
+        background: #444444;
     }
 
     .site-navigation.show {
-        left: 80px;
+        left: 60px;
     }
 
     .site-header {
-        background: #fff;
+        background: #444444;
+        border: 1px solid #343333;
+
     }
 
     .site-header.no-shadow {
@@ -285,7 +307,7 @@ a:hover, a:active {
     }
 
     .site-title {
-        padding: 28px 0 10px 0;
+        padding: 20px 0 10px 0;
     }
 
     .hamburger-menu .menu-icon,
@@ -396,7 +418,7 @@ a:hover, a:active {
     transition: all 0.35s;
 }
 
-.portfolio-content:hover .entry-content {
+.teikti_kurinius_img:hover .entry-content {
     visibility: visible;
     opacity: 1;
 }
@@ -448,15 +470,20 @@ a:hover, a:active {
 .breadcrumbs {
     padding: 48px 0;
     margin: 0;
-    color: #a6a6a6;
+     color: #08F4D2;
     list-style: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'GlenJan-AsketNarrow-Light', 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 0.78px;
+
 }
 
 .breadcrumbs li {
     position: relative;
-    color: #a6a6a6;
+     color: #08F4D2;
     padding: 0 12px;
+    border-bottom: 1px solid #08F4D2;
 }
 
 .breadcrumbs li:nth-of-type(1) {
@@ -1103,20 +1130,21 @@ a:hover, a:active {
 
 .mainHeader
 {
-position: fixed;
+  font-weight: 300;
+  margin-left: 84px;
+  margin-top: 31px;
+  width: auto;
 
-z-index: 9999;
-padding: 10px;
-width: 100%;
-border-bottom: 0px solid black;
-background: #fff;
-box-shadow: 0 12px 24px rgba(0,0,0,.09);
-height: 5vh;
+  background: transparent;
+  position: absolute;
+
+
 
 }
 .mainHeader h5
 {
-
+    font-size: 16px;
+    color: #FFFFFF;
   margin-bottom: 0px;
 }
 .mobileHeader
@@ -1138,6 +1166,7 @@ height: 5vh;
   .mainHeader h5
   {
     opacity: 0;
+    color: #FFFFFF;
   }
   .mobileHeader
   {
@@ -1170,12 +1199,14 @@ height: 5vh;
 {
   max-width: 250px;
   max-height: 150px;
+  margin-top: 30px;
 
 }
 #small_logo
 {
-  max-width: 60px;
-  max-height: 50px;
+  width: 40px;
+  height: 60px;
+
 
 }
 /*
@@ -1185,21 +1216,16 @@ height: 5vh;
 */
 .teikti_kurinius_img
 {
-  border:none;
+   border: 3px solid #08F4D2;
    background:none;
    cursor:pointer;
    height:100%;
    width:100%;
    padding: 0px;
    outline: none;
-   border: 0;
+
 }
 
-
-#breadcrumbs
-{
-  margin-top:42.5px;
-}
 
 /*
 /////////////////////////////////////////
@@ -1230,4 +1256,57 @@ height: 5vh;
 {
 font-size: 19px;
 
+}
+.modal-content
+{
+  background-color: #444444;
+}
+/*
+//////////////////////////////////////////////////
+#CSS FOR THE MAIN PAGE IMAGE
+////////////////////////////////////////////
+*/
+
+.main-picture-space
+{
+  width: auto;
+  min-height: 100vh;
+  padding-left: 60px;
+  width: 100%;
+   display: flex;
+   justify-content: center;
+}
+@media screen and (max-width: 992px) {
+
+.main-picture-space
+{
+  padding-left: 0px;
+}
+}
+/*
+////////////////////////////////////////////////////////////////////////
+#css for the teikti kurinius button
+/////////////////////////////////////////////////////
+*/
+.down-scroll a
+{
+
+color: #08F4D2;
+font-family: 'GlenJan-AsketNarrow-Light', 'Work Sans', sans-serif;
+font-size: 30px;
+font-weight: 300;
+text-align: center;
+letter-spacing: 0.94px;
+text-decoration: none;
+}
+
+.down-scroll a img
+{
+  transition: 0.3s;
+  padding-bottom: 5px;
+}
+.down-scroll a:hover img
+{
+  padding-top: 5px;
+  padding-bottom: 0px;
 }
