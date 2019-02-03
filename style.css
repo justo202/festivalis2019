@@ -32,7 +32,7 @@ img {
 # Links
 --------------------------------------------------------------*/
 a {
-    color: royalblue;
+    color: #08F4D2;
 }
 
 a:visited {
@@ -40,7 +40,7 @@ a:visited {
 }
 
 a:hover, a:focus, a:active {
-    color: midnightblue;
+    color: #61F8E2;
 }
 
 a:focus {
@@ -1273,6 +1273,11 @@ a:hover, a:active {
 font-size: 19px;
 
 }
+#sectionTitle
+{
+  border-bottom: 1px solid #08F4D2;
+}
+
 .modal-content
 {
   border: 3px solid #08F4D2;
