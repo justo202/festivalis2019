@@ -13,9 +13,3 @@ RewriteCond %{REQUEST_FILENAME}\.html -f
 # Now we actually show the .html extension file
 
 RewriteRule ^(.*)$ $1.html [NC,L]
-
-# removes index from title
-
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ /index?/$1 [L]
