@@ -8,7 +8,7 @@
       {% assign sorted_pages = site.pages | sort:"order" %}
       {% for node in sorted_pages %}
       {% if node.order != nil %}
-      <li {%if node.title == page.title %} class = "current-menu-item" {%endif%}> <a href="{%if node.path == "index.html" %} / {%else %}{{node.path | remove: ".html"}} {%endif%}">{{node.title}}</a></li>
+      <li {%if node.title == page.title %} class = "current-menu-item" {%endif%}> <a href="{%if node.path == "index.html" %}/{%else %}{{node.path | remove: ".html"}} {%endif%}">{{node.title}}</a></li>
       {% endif %}
       {% endfor %}
     </ul>
