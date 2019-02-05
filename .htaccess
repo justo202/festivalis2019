@@ -1,0 +1,15 @@
+# mod_rewrite starts here
+
+RewriteEngine on
+
+# Rule does not apply to folders
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Check for a file in with a .html extension
+
+RewriteCond %{REQUEST_FILENAME}\.html -f
+
+# Now we actually show the .html extension file
+
+RewriteRule ^(.*)$ $1.html [NC,L]
