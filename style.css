@@ -1327,6 +1327,13 @@ font-size: 19px;
   height: 83vh;
 }
 }
+@media screen and (max-width: 320px) {
+
+.main-picture-space svg
+{
+  height: 80vh;
+}
+}
 /*
 ////////////////////////////////////////////////////////////////////////
 #css for the teikti kurinius button
