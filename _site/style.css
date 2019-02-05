@@ -202,7 +202,7 @@ a:hover, a:active {
         left: 0;
         z-index: 999;
         width: 100%;
-        padding: 10px 30px;
+        padding: 5px 30px;
         background: #444444;
         box-shadow: 0 12px 24px rgba(0,0,0,.09);
     }
@@ -246,7 +246,7 @@ a:hover, a:active {
       changed from absolute to fixed
       */
         position: fixed;
-        top: 78px;
+        top: 76px;
         left: 0;
         z-index: 99;
         width: 100%;
@@ -1310,11 +1310,21 @@ font-size: 19px;
    display: flex;
    justify-content: center;
 }
+
+.main-picture-space svg
+{
+  height:90vh;
+}
+
 @media screen and (max-width: 992px) {
 
 .main-picture-space
 {
   padding-left: 0px;
+}
+.main-picture-space svg
+{
+  height: 83vh;
 }
 }
 /*
