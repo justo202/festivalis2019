@@ -42,6 +42,9 @@
 </head>
 
 <body>
+  {%if page.name != "index.html"%}
+    {%include header.html %}
+  {%endif%}
 
   {% include sidebar_header.html %}
 
