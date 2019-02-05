@@ -1213,8 +1213,13 @@ a:hover, a:active {
 {
   width: 40px;
   height: 60px;
+}
+@media screen and (min-width: 992px) {
 
-
+#small_logo
+{
+  margin-top: 20px;
+}
 }
 /*
 //////////////////////
