@@ -1,6 +1,4 @@
----
-language: "lt"
----
+
 
 <!DOCTYPE html>
 <html lang="lt" dir="ltr">
@@ -56,7 +54,9 @@ language: "lt"
   {% include sidebar_header.html %}
 
   {% include navbar.html %}
-
+{%if page.title != "- KURSAI // JAUNIEJI KŪRĖJAI" %}
+{% include change-lang.html %}
+{%endif%}
   {{content}}
 
   <script type='text/javascript' src='js/jquery.js'></script>

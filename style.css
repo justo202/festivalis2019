@@ -1366,3 +1366,32 @@ text-decoration: none;
   padding-top: 5px;
   padding-bottom: 0px;
 }
+
+
+
+/*
+///////////////////////////////////////////////////////////////////////////
+#change language button css
+/////////////////////////////////////////////////////////////////////////////
+*/
+
+.change-lang
+{
+position: absolute;
+right: 50px;
+top: 30px;
+display: inline-flex;
+
+
+}
+.change-lang h5 a {
+    display: block;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: all 0.35s;
+}
+
+.change-lang h5 a:hover,
+.change-lang h5.current-menu-item a {
+    color: #08F4D2;
+}
