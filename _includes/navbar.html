@@ -1,14 +1,20 @@
 <nav class="site-navigation flex flex-column justify-content-between">
   <div class="site-branding d-none d-lg-block ">
-    <h1 class="site-title"><a href="/" rel="home"><img id="big_logo" src="images/Logo-white.svg" alt="Logo"></a></h1>
+    <h1 class="site-title"><a {%if page.lang == "lt" %}href="/" {%else%} href="en" {%endif%} rel="home"><img id="big_logo" src="images/Logo-white.svg" alt="Logo"></a></h1>
   </div><!-- .site-branding -->
 
   <ul class="main-menu flex flex-column justify-content-center">
     {% assign sorted_pages = site.pages | sort:"order" %}
     {% for node in sorted_pages %}
     {% if node.order != nil %}
+    {% if page.lang == "lt" %}
+{%if node.lang == "lt" %}    <li {%if node.title == page.title %} class="current-menu-item" {%endif%}> <a href="{%if node.path == " index.html" %}/{%else%} {{node.path | remove: ".html"}} {%endif%}">{{node.title}}</a></li> {%endif%}
+    {%elsif page.lang == "en" %}
+{%if node.lang == "en" %}    <li {%if node.title == page.title %} class="current-menu-item" {%endif%}> <a href="{%if node.path == " index.html" %}/{%else%} {{node.path | remove: ".html"}} {%endif%}">{{node.title}}</a></li> {%endif%}
+    {%endif%}
 
-    <li {%if node.title == page.title %} class="current-menu-item" {%endif%}> <a href="{%if node.path == " index.html" %}/{%else%} {{node.path | remove: ".html"}} {%endif%}">{{node.title}}</a></li>
+
+
     {% endif %}
     {% endfor %}
   </ul>
