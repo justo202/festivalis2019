@@ -55,7 +55,9 @@
 
   {% include navbar.html %}
 {%if page.title != "- KURSAI // JAUNIEJI KŪRĖJAI" %}
-{% include change-lang.html %}
+<div class="large-screen">
+  {% include change-lang.html %}
+</div>
 {%endif%}
   {{content}}
 
