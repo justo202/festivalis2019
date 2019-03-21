@@ -423,6 +423,7 @@ a:hover, a:active {
     opacity: 1;
 }
 
+
 .portfolio-content h3 {
     margin-bottom: 0;
     font-family: 'GlenJan-AsketNarrow-Light', 'Poppins', sans-serif;
@@ -1409,4 +1410,110 @@ display: inline-flex;
 {
   display: none;
 }
+}
+
+
+/*
+///////////////////////////////////////////////////////////////////////////
+#Kontaktai page css
+///////////////////////////////////////////////////////////////////////////////
+*/
+
+.contact-Container
+{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+
+
+}
+.contact-item
+{
+
+    border: 3px solid #08F4D2;
+    flex: 1 1 auto;
+    position: relative;
+    margin-bottom: 30px;
+    height: 100%;
+    max-width: 19%;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+.contact-item h3
+{
+  color: black;
+
+}
+
+.contact-item figure {
+    margin: 0;
+    height: 100%;
+}
+
+.contact-item figure img {
+    display: block;
+    width: 100%;
+
+    min-height: 100%;
+}
+
+
+.contact-item .contact-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,.9);
+    font-family: 'GlenJan-AsketNarrow-Light', 'Poppins', sans-serif;
+    text-align: center;
+    visibility: hidden;
+    color: black;
+    opacity: 0;
+    transition: all 0.35s;
+}
+.contact-text h3
+{
+  margin-bottom: 0;
+  font-family: 'GlenJan-AsketNarrow-Light', 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-top: 20px;
+  border-bottom: 1px solid #08F4D2;
+}
+.contact-item:hover .contact-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+@media screen and (max-width: 992px) {
+
+  .contact-Container
+  {
+    flex-wrap: wrap;
+  }
+  .contact-item
+  {
+      max-width: 45%;
+
+  }
+
+}
+@media screen and (max-width: 528px) {
+
+  .contact-item
+  {
+
+      max-width: 100%;
+
+  }
+
 }
