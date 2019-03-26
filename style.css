@@ -14,6 +14,10 @@ src: url(fonts/GlenJan-AsketNarrow-Light.otf);
 font-family: 'SharpGroteskMedium05';
 src: url(fonts/SharpGroteskMedium05.otf);
 }
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -1514,6 +1518,41 @@ display: inline-flex;
 
       max-width: 100%;
 
+  }
+
+}
+
+
+
+
+#kurejai
+{
+  object-fit: scale-down;
+  width: 100%;
+  height: 900px;
+
+}
+@media screen and (max-width: 647px) {
+
+  #kurejai
+  {
+    height: 700px;
+  }
+
+}
+@media screen and (max-width: 425px) {
+
+  #kurejai
+  {
+    height: 500px;
+  }
+
+}
+@media screen and (max-width: 320px) {
+
+  #kurejai
+  {
+    height: 400px;
   }
 
 }
