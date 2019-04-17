@@ -16,7 +16,15 @@
   <meta name="theme-color" content="#ffffff">
 
   <!--image on fb -->
+  {%if page.name == "program.html"%}
+
+    <meta property="og:image" content="http://druskomanija.lt/images/program.png">
+
+  {%else%}
+
   <meta property="og:image" content="http://druskomanija.lt/images/hero-small.png">
+  
+  {%endif%}
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1024">
   <meta property="og:image:height" content="1024">
@@ -46,7 +54,7 @@
 </head>
 
 <body>
-  {%if page.name != "en.html"%}
+  {%if page.name != "en.html" and page.name != "program.html"%}
   {%include header.html %}
   {%endif%}
 

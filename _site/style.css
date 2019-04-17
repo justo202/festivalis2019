@@ -254,7 +254,7 @@ a:hover, a:active {
         left: 0;
         z-index: 99;
         width: 100%;
-        height: 380px;
+        height: auto;
         background: #444444;
         box-shadow: 0 12px 24px rgba(0,0,0,.09);
         visibility: hidden;
@@ -1553,6 +1553,44 @@ display: inline-flex;
   #kurejai
   {
     height: 400px;
+  }
+
+}
+
+/*
+////////////////////////////////////////////////////////////
+#programa poster css
+/////////////////////////////////////////////
+*/
+
+#poster
+{
+  object-fit: scale-down;
+  width: 100%;
+  height: 1500px;
+
+}
+@media screen and (max-width: 768px) {
+
+  #poster
+  {
+    height: 1200px;
+  }
+
+}
+@media screen and (max-width: 558px) {
+
+  #poster
+  {
+    height: 950px;
+  }
+
+}
+@media screen and (max-width: 425px) {
+
+  #poster
+  {
+    height: 700px;
   }
 
 }
