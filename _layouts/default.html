@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="lt" dir="ltr">
 
@@ -15,7 +17,15 @@
   <meta name="theme-color" content="#ffffff">
 
   <!--image on fb -->
+  {%if page.name == "programa.html"%}
+
+    <meta property="og:image" content="http://druskomanija.lt/images/program.png">
+
+  {%else%}
+
   <meta property="og:image" content="http://druskomanija.lt/images/hero-small.png">
+
+  {%endif%}
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1024">
   <meta property="og:image:height" content="1024">
@@ -38,18 +48,25 @@
   <link rel="stylesheet" href="style.css">
   <!-- Module Animations -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
   <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 </head>
 
 <body>
-  {%if page.name != "index.html"%}
-    {%include header.html %}
+  {%if page.name != "index.html" and page.name != "programa.html" %}
+  {%include header.html %}
   {%endif%}
 
   {% include sidebar_header.html %}
 
   {% include navbar.html %}
-
+{%if page.title != "- KURSAI // JAUNIEJI KŪRĖJAI" %}
+<div class="large-screen">
+  {% include change-lang.html %}
+</div>
+{%endif%}
   {{content}}
 
   <script type='text/javascript' src='js/jquery.js'></script>

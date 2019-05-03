@@ -1,0 +1,19 @@
+
+
+<div class="change-lang m-auto">
+
+  {% assign sorted_pages = site.pages%}
+  {%if page.lang == "lt"%}
+    <h5 class = "current-menu-item"><a href="" >LT</a></h5>
+    <h5>/</h5>
+  <h5><a {% for node in sorted_pages %}{%if node.order == page.order and node.lang == "en"%}href="{%if node.path == "index.html" %}/{%else%} {{node.path | remove: ".html"}} {%endif%}" {%endif%}{% endfor %}>EN</a></h5>
+
+{%elsif page.lang == "en" %}
+<h5 ><a {% for node in sorted_pages %}{%if node.order == page.order and node.lang == "lt"%}href="{%if node.path == "index.html" %}/{%else%} {{node.path | remove: ".html"}} {%endif%}" {%endif%}{% endfor %}>LT</a></h5>
+<h5>/</h5>
+<h5 class = "current-menu-item"><a href="" >EN</a></h5>
+
+
+{%endif%}
+
+</div>

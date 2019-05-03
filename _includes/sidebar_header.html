@@ -2,8 +2,8 @@
 
 <div class="site-header">
     <div class="site-branding">
-      <a  style = "float:left" href="/" rel="home"><img id = "small_logo" src="images/Logo-white.svg" alt="Logo"></a>
-        <h1 class="site-title" style = "float:left; padding-top:6px"><span class = "mobileHeader"><span id = "muzikosfestivalis">MUZIKOS FESTIVALIS</span> <span class = "font-weight-bold">DRUSKOMANIJA</span> </span></h1>
+      <a  style = "float:left" {%if page.lang == "lt" %}href="/" {%else%} href="en" {%endif%} rel="home"><img id = "small_logo" src="images/Logo-white.svg" alt="Logo"></a>
+        <h1 class="site-title" style = "float:left; padding-top:6px"><span class = "mobileHeader"><span id = "muzikosfestivalis">{%if page.lang == "lt"%}MUZIKOS FESTIVALIS{%elsif page.lang =="en"%}MUSIC FESTIVAL{%endif%}</span> <span class = "font-weight-bold">DRUSKOMANIJA</span> </span></h1>
 
     </div><!-- .site-branding -->
 

@@ -14,6 +14,10 @@ src: url(fonts/GlenJan-AsketNarrow-Light.otf);
 font-family: 'SharpGroteskMedium05';
 src: url(fonts/SharpGroteskMedium05.otf);
 }
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -250,7 +254,7 @@ a:hover, a:active {
         left: 0;
         z-index: 99;
         width: 100%;
-        height: 500px;
+        height: auto;
         background: #444444;
         box-shadow: 0 12px 24px rgba(0,0,0,.09);
         visibility: hidden;
@@ -264,7 +268,7 @@ a:hover, a:active {
     }
 
     .social-profiles ul {
-        padding: 80px 15px 30px;
+        padding: 40px 15px 30px;
         margin: 0;
     }
 }
@@ -422,6 +426,7 @@ a:hover, a:active {
     visibility: visible;
     opacity: 1;
 }
+
 
 .portfolio-content h3 {
     margin-bottom: 0;
@@ -1365,4 +1370,227 @@ text-decoration: none;
 {
   padding-top: 5px;
   padding-bottom: 0px;
+}
+
+
+
+/*
+///////////////////////////////////////////////////////////////////////////
+#change language button css
+/////////////////////////////////////////////////////////////////////////////
+*/
+
+.change-lang
+{
+position: absolute;
+right: 50px;
+top: 30px;
+display: inline-flex;
+}
+.change-lang h5
+{
+  margin: 0;
+}
+.change-lang h5 a {
+    display: block;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: all 0.35s;
+}
+
+.change-lang h5 a:hover,
+.change-lang h5.current-menu-item a {
+    color: #08F4D2;
+}
+
+
+@media screen and (max-width: 992px) {
+
+.change-lang
+{
+  position: static;
+}
+.large-screen .change-lang
+{
+  display: none;
+}
+}
+
+
+/*
+///////////////////////////////////////////////////////////////////////////
+#Kontaktai page css
+///////////////////////////////////////////////////////////////////////////////
+*/
+
+.contact-Container
+{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+
+
+}
+.contact-item
+{
+
+    border: 3px solid #08F4D2;
+    flex: 1 1 auto;
+    position: relative;
+    margin-bottom: 30px;
+    height: 100%;
+    max-width: 19%;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+.contact-item h3
+{
+  color: black;
+
+}
+
+.contact-item figure {
+    margin: 0;
+    height: 100%;
+}
+
+.contact-item figure img {
+    display: block;
+    width: 100%;
+
+    min-height: 100%;
+}
+
+
+.contact-item .contact-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,.9);
+    font-family: 'GlenJan-AsketNarrow-Light', 'Poppins', sans-serif;
+    text-align: center;
+    visibility: hidden;
+    color: black;
+    opacity: 0;
+    transition: all 0.35s;
+}
+.contact-text h3
+{
+  margin-bottom: 0;
+  font-family: 'GlenJan-AsketNarrow-Light', 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-top: 20px;
+  border-bottom: 1px solid #08F4D2;
+}
+.contact-item:hover .contact-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+@media screen and (max-width: 992px) {
+
+  .contact-Container
+  {
+    flex-wrap: wrap;
+  }
+  .contact-item
+  {
+      max-width: 45%;
+
+  }
+
+}
+@media screen and (max-width: 528px) {
+
+  .contact-item
+  {
+
+      max-width: 100%;
+
+  }
+
+}
+
+
+
+
+#kurejai
+{
+  object-fit: scale-down;
+  width: 100%;
+  height: 900px;
+
+}
+@media screen and (max-width: 647px) {
+
+  #kurejai
+  {
+    height: 700px;
+  }
+
+}
+@media screen and (max-width: 425px) {
+
+  #kurejai
+  {
+    height: 500px;
+  }
+
+}
+@media screen and (max-width: 320px) {
+
+  #kurejai
+  {
+    height: 400px;
+  }
+
+}
+
+/*
+////////////////////////////////////////////////////////////
+#programa poster css
+/////////////////////////////////////////////
+*/
+
+#poster
+{
+  object-fit: scale-down;
+  width: 100%;
+  height: 1500px;
+
+}
+@media screen and (max-width: 768px) {
+
+  #poster
+  {
+    height: 1200px;
+  }
+
+}
+@media screen and (max-width: 558px) {
+
+  #poster
+  {
+    height: 950px;
+  }
+
+}
+@media screen and (max-width: 425px) {
+
+  #poster
+  {
+    height: 700px;
+  }
+
 }
